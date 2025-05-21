@@ -414,7 +414,7 @@ process_callback = 0
 limit_bottom = 140
 limit_smoothed = true
 position_smoothing_enabled = true
-position_smoothing_speed = 3.0
+position_smoothing_speed = 1.5
 
 [node name="Killzone" parent="." instance=ExtResource("5_iywne")]
 position = Vector2(968, 146)
