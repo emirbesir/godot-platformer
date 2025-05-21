@@ -6,17 +6,15 @@ This document showcases screenshots from the 2D platformer game made in Godot as
 
 Below are some in-game screenshots.
 
----
+![Screenshot 1](../screenshots/screenshot_1.png)
 
-![Screenshot 1](screenshot_1.png)
-
-*Player navigating platforms and collecting coins.*
+*Game start screen*
 
 ---
 
-![Screenshot 2](screenshot_2.png)
+![Screenshot 2](../screenshots/screenshot_2.png)
 
-*Encounter with a slime enemy and score display.*
+*Encounter with a slime enemy*
 
 ---
 
