@@ -20,6 +20,16 @@ This repository contains a complete 2D platformer game project built with the Go
 - [Project Structure & Learning Goals](docs/PROJECT_INFO.md)
 - [Assets & Credits](docs/ASSETS_CREDITS.md)
 
+## Things to do
+- Main Menu, Settings Screen, Pause Screen
+- Expand The Level
+- Add Effects (Animation, Particles, SFX)
+- Add Danger (Spikes, Traps)
+- Add More Enemies
+- Add Weapon
+- Add Powerup
+- Coyote Time, Double Jump
+
 ---
 
 Tested and made with **Godot 4.4.1**.
