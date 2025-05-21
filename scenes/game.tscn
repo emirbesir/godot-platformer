@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=4 uid="uid://3a34kxv5ldln"]
+[gd_scene load_steps=21 format=4 uid="uid://3a34kxv5ldln"]
 
+[ext_resource type="Script" uid="uid://dgr1v2ljhx85b" path="res://scripts/game_manager.gd" id="1_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://chlg5je0c7cw2" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cseqdpb6r7a" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://5x2h7t8jwq53" path="res://scenes/platform.tscn" id="3_lnu2h"]
@@ -7,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://dxq4vhfoar10f" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dm2qgod5up6nd" path="res://scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="FontFile" uid="uid://c46rugfquisrs" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
+[ext_resource type="FontFile" uid="uid://ds2cfd4y7xfj2" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_gee14"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iywne"]
 texture = ExtResource("2_yqjtg")
@@ -382,9 +386,23 @@ _data = {
 &"move": SubResource("Animation_lnu2h")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
-
 [node name="Game" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_0tnpc")
+
+[node name="ScoreLabel" type="Label" parent="GameManager"]
+offset_left = 473.0
+offset_top = -174.0
+offset_right = 658.0
+offset_bottom = -151.0
+theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
+theme_override_fonts/font = ExtResource("8_gee14")
+theme_override_font_sizes/font_size = 8
+text = "You collected X coins!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
 z_index = 5
@@ -397,6 +415,12 @@ limit_bottom = 140
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
+
+[node name="Killzone" parent="." instance=ExtResource("5_iywne")]
+position = Vector2(968, 146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_p57ef")
 
 [node name="Tilemaps" type="Node" parent="."]
 
@@ -511,12 +535,6 @@ position = Vector2(156, 32)
 [node name="Slime2" parent="Slimes" instance=ExtResource("6_p57ef")]
 position = Vector2(379, 32)
 
-[node name="Killzone" parent="." instance=ExtResource("5_iywne")]
-position = Vector2(968, 146)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-shape = SubResource("WorldBoundaryShape2D_p57ef")
-
 [node name="Texts" type="Node" parent="."]
 
 [node name="Label" type="Label" parent="Texts"]
@@ -544,19 +562,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Texts"]
-offset_left = 598.0
-offset_top = -40.0
-offset_right = 732.0
-offset_bottom = -17.0
-theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("7_u5sy4")
-theme_override_font_sizes/font_size = 8
-text = "A platform...
-in a platformer..."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label4" type="Label" parent="Texts"]
 offset_left = 895.0
 offset_top = -51.0
 offset_right = 1029.0
@@ -568,11 +573,11 @@ text = "Almost there!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label5" type="Label" parent="Texts"]
+[node name="Label4" type="Label" parent="Texts"]
 offset_left = 504.0
-offset_top = -157.0
+offset_top = -184.0
 offset_right = 638.0
-offset_bottom = -134.0
+offset_bottom = -161.0
 theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
 theme_override_fonts/font = ExtResource("7_u5sy4")
 theme_override_font_sizes/font_size = 8
