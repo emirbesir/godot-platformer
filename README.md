@@ -1,4 +1,14 @@
+<div align="center">
+
 # 2D Platformer Practice Game
+
+![Last Commit](https://img.shields.io/github/last-commit/emirbesir/godot-2dplatformer?style=flat&logo=git&logoColor=white&color=0080ff)
+![Top Language](https://img.shields.io/github/languages/top/emirbesir/godot-2dplatformer?style=flat&color=0080ff)
+![Unity](https://img.shields.io/badge/Godot-478CBF.svg?style=flat&logo=godotengine&logoColor=white)
+
+</div>
+
+---
 
 This repository contains a complete 2D platformer game project built with the Godot Engine. The project was created as a practice and learning exercise to explore Godot's features, scripting, and game development workflow.
 
