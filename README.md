@@ -6,40 +6,28 @@
 ![Top Language](https://img.shields.io/github/languages/top/emirbesir/godot-2dplatformer?style=flat&color=0080ff)
 ![Unity](https://img.shields.io/badge/Godot-478CBF.svg?style=flat&logo=godotengine&logoColor=white)
 
+_Made and Tested with **Godot 4.4.1**_
+
 </div>
 
 ---
 
-This repository contains a complete 2D platformer game project built with the Godot Engine. The project was created as a practice and learning exercise to explore Godot's features, scripting, and game development workflow.
+- This repository contains a complete 2D platformer game project built with GDScript and Godot Engine. 
 
-## Features
+- The project was created as a practice and learning exercise to explore Godot fundamentals.
 
-- **Player Movement:** Smooth and responsive controls for running and jumping.
-- **Collectibles:** Coins that increase the player's score when collected, with sound effects.
-- **Enemies:** Slime enemies that challenge the player.
-- **Platforms:** Static and moving platforms to navigate the level.
-- **Score System:** Real-time score tracking and display.
-- **Death & Respawn:** Player dies and respawns if falling off the map or touching a slime.
-- **Audio:** Background music and sound effects for collecting coins.
-- **Visuals:** Pixel art sprites, tilemaps, and animated player/enemy characters.
-- **Tips & Labels:** Helpful labels to guide the player.
+- This project was created by following the [Brackeys' Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) Special thanks to Brackeys for providing clear and helpful guidance for beginners.
 
-## Documentation
-- [Screenshots & Visuals](docs/SCREENSHOTS.md)
-- [Getting Started & Exporting](docs/GETTING_STARTED.md)
-- [Project Structure & Learning Goals](docs/PROJECT_INFO.md)
-- [Assets & Credits](docs/ASSETS_CREDITS.md)
+## Screenshots
 
-## Things to do
-- Main Menu, Settings Screen, Pause Screen
-- Expand The Level
-- Add Effects (Animation, Particles, SFX)
-- Add Danger (Spikes, Traps)
-- Add More Enemies
-- Add Weapon
-- Add Powerup
-- Coyote Time, Double Jump
+![Screenshot 1](docs/screenshots/screenshot_1.png)
+
+*Game start screen*
 
 ---
 
-Tested and made with **Godot 4.4.1**.
+![Screenshot 2](docs/screenshots/screenshot_2.png)
+
+*Encounter with a slime enemy*
+
+---
