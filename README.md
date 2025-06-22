@@ -20,7 +20,7 @@ _Made and Tested with **Godot 4.4.1**_
 
 ## Learning Goals
 This project was developed to:
-- Learn Godot Engine fundamentals
+- Learn Godot fundamentals
 - Practice Godot's scene and node system
 - Learn GDScript and its scripting patterns
 - Implement common platformer mechanics
